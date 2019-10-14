@@ -12,3 +12,6 @@ Trying to set up the circuit, it did not work out as I thought (The wiring gets 
 Got the circuit set up, tested the 3 H-Bridges with LEDs, they all seem working properly
 A copy of the test code is in Development.
 ![header image](https://github.com/zhengronggift/miniRhex/blob/master/image/image4.jpeg?raw=true)
+
+A YouTube Demonstration of the testing:
+https://youtu.be/kHWFc5deUCg
