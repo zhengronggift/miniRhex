@@ -1,0 +1,124 @@
+//L293D
+//Motor A
+const int motorPin1  = 2;  // Pin 14 of L293
+const int motorPin2  = 3;  // Pin 10 of L293
+//Motor B
+const int motorPin3  = 4; // Pin  7 of L293
+const int motorPin4  = 5;  // Pin  2 of L293
+const int motorPin5  = 6;  // Pin 14 of L293
+const int motorPin6  = 7;  // Pin 10 of L293
+//Motor B
+const int motorPin7  = 8; // Pin  7 of L293
+const int motorPin8  = 9;  // Pin  2 of L293
+
+const int motorPin9  = 10;  // Pin 14 of L293
+const int motorPin10  = 11;  // Pin 10 of L293
+//Motor B
+const int motorPin11  = A4; // Pin  7 of L293
+const int motorPin12  = A5;  // Pin  2 of L293
+
+//This will run only one time.
+void setup(){
+ 
+    //Set pins as outputs
+    pinMode(motorPin1, OUTPUT);
+    pinMode(motorPin2, OUTPUT);
+    pinMode(motorPin3, OUTPUT);
+    pinMode(motorPin4, OUTPUT);
+    pinMode(motorPin5, OUTPUT);
+    pinMode(motorPin6, OUTPUT);
+    pinMode(motorPin7, OUTPUT);
+    pinMode(motorPin8, OUTPUT);
+    pinMode(motorPin9, OUTPUT);
+    pinMode(motorPin10, OUTPUT);
+    pinMode(motorPin11, OUTPUT);
+    pinMode(motorPin12, OUTPUT);
+    
+    //Motor Control - Motor A: motorPin1,motorpin2 & Motor B: motorpin3,motorpin4
+
+    //This code  will turn Motor A clockwise for 2 sec.
+    digitalWrite(motorPin1, HIGH);
+    digitalWrite(motorPin2, LOW);
+    digitalWrite(motorPin3, LOW);
+    digitalWrite(motorPin4, LOW);
+
+    digitalWrite(motorPin5, HIGH);
+    digitalWrite(motorPin6, LOW);
+    digitalWrite(motorPin7, LOW);
+    digitalWrite(motorPin8, LOW);
+
+    digitalWrite(motorPin9, HIGH);
+    digitalWrite(motorPin10, LOW);
+    digitalWrite(motorPin11, LOW);
+    digitalWrite(motorPin12, LOW);
+    delay(2000); 
+    //This code will turn Motor A counter-clockwise for 2 sec.
+    digitalWrite(motorPin1, LOW);
+    digitalWrite(motorPin2, HIGH);
+    digitalWrite(motorPin3, LOW);
+    digitalWrite(motorPin4, LOW);
+
+    digitalWrite(motorPin5, LOW);
+    digitalWrite(motorPin6, HIGH);
+    digitalWrite(motorPin7, LOW);
+    digitalWrite(motorPin8, LOW);
+
+    digitalWrite(motorPin9, LOW);
+    digitalWrite(motorPin10, HIGH);
+    digitalWrite(motorPin11, LOW);
+    digitalWrite(motorPin12, LOW);
+    delay(2000);
+    
+    //This code will turn Motor B clockwise for 2 sec.
+    digitalWrite(motorPin1, LOW);
+    digitalWrite(motorPin2, LOW);
+    digitalWrite(motorPin3, HIGH);
+    digitalWrite(motorPin4, LOW);
+
+    digitalWrite(motorPin5, LOW);
+    digitalWrite(motorPin6, LOW);
+    digitalWrite(motorPin7, HIGH);
+    digitalWrite(motorPin8, LOW);
+
+    digitalWrite(motorPin9, LOW);
+    digitalWrite(motorPin10, LOW);
+    digitalWrite(motorPin11, HIGH);
+    digitalWrite(motorPin12, LOW);
+    delay(2000); 
+    //This code will turn Motor B counter-clockwise for 2 sec.
+    digitalWrite(motorPin1, LOW);
+    digitalWrite(motorPin2, LOW);
+    digitalWrite(motorPin3, LOW);
+    digitalWrite(motorPin4, HIGH);
+
+    digitalWrite(motorPin5, LOW);
+    digitalWrite(motorPin6, LOW);
+    digitalWrite(motorPin7, LOW);
+    digitalWrite(motorPin8, HIGH);
+
+    digitalWrite(motorPin9, LOW);
+    digitalWrite(motorPin10, LOW);
+    digitalWrite(motorPin11, LOW);
+    digitalWrite(motorPin12, HIGH);
+    delay(2000);    
+    
+    //And this code will stop motors
+    digitalWrite(motorPin1, LOW);
+    digitalWrite(motorPin2, LOW);
+    digitalWrite(motorPin3, LOW);
+    digitalWrite(motorPin4, LOW);
+    digitalWrite(motorPin5, LOW);
+    digitalWrite(motorPin6, LOW);
+    digitalWrite(motorPin7, LOW);
+    digitalWrite(motorPin8, LOW);
+
+    digitalWrite(motorPin9, LOW);
+    digitalWrite(motorPin10, LOW);
+    digitalWrite(motorPin11, LOW);
+    digitalWrite(motorPin12, LOW);
+  
+}
+
+
+void loop(){
+}
