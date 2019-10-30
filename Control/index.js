@@ -11,7 +11,7 @@ app.get('/', function (res) {
     res.sendFile('/index.html')
 });
 
-/*var board = new five.Board({
+var board = new five.Board({
     repl: false
 });
 
@@ -83,4 +83,3 @@ board.on('ready', function () {
         });
     });
 });
-*/
