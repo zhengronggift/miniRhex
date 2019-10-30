@@ -11,13 +11,13 @@ html,body{
 }
 
 .container{
-    width: 295px;
-    margin: 160px auto;
+    width: 500px;
+    margin: 0px auto;
 }
 
 .fa{
     background-color: DodgerBlue;
-    padding: 26px 35px;
+    padding: 20px 30px;
     border-radius: 3px;
     border: 1px solid #eeeeee;
     font-size: 35px;
@@ -31,15 +31,4 @@ html,body{
 
 .fa:hover{
     background-color: RoyalBlue;
-}
-
-.fa:first-of-type{
-    margin: 18px 100px;
-    display: block;
-}
-
-.stop{
-    width: 96%;
-    margin-top: 15px;
-    text-align: center;
 }
